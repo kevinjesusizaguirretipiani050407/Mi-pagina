@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+#mensaje {
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* Estilo para cada frase */
+.frase {
+  position: absolute;
+  font-size: 2rem;
+  color: #ff3366;
+  transform: scale(0);
+  animation: expandir 1.2s forwards;
+  font-weight: bold;
+}
+
+@keyframes expandir {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
